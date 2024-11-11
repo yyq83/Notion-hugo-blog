@@ -1,7 +1,10 @@
 baseURL = "https://yyq83.github.io/notion-hugo-blog"
-languageCode = "en-cs"
+
 title = "My New Hugo Site"
 theme = "DoIt"
+defaultContentLanguage = "zh-cn"
+# 网站语言, 仅在这里 CN 大写
+languageCode = "zh-CN"
 
 paginate = 12
 # 版权描述，仅仅用于 SEO
@@ -101,33 +104,33 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
   # 搜索配置
   [params.search]
     enable = true
-    # 搜索引擎的类型 ("lunr", "algolia", "fuse")
-    type = "algolia"
+    # 搜索引擎的类型 ("algolia", "fuse")
+    type = "fuse"
     # 文章内容最长索引长度
     contentLength = 4000
     # 搜索框的占位提示语
     placeholder = ""
-    # 最大结果数目
+    # DoIt 新增 | 0.2.1 最大结果数目
     maxResultLength = 10
-    # 结果内容片段长度
+    # DoIt 新增 | 0.2.3 结果内容片段长度
     snippetLength = 50
-    # 搜索结果中高亮部分的 HTML 标签
+    # DoIt 新增 | 0.2.1 搜索结果中高亮部分的 HTML 标签
     highlightTag = "em"
-    # 是否在搜索索引中使用基于 baseURL 的绝对路径
+    # DoIt 新增 | 0.2.4 是否在搜索索引中使用基于 baseURL 的绝对路径
     absoluteURL = false
     [params.search.algolia]
-      index = "zh_cn_index"
-      appID = "5YGRNRQK1G"
-      searchKey = "0ff6874805de24b84aa1d5ebccad56cd"
+      index = ""
+      appID = ""
+      searchKey = ""
     [params.search.fuse]
-      # https://fusejs.io/api/options.html
+      # DoIt 新增 | 0.2.12 https://fusejs.io/api/options.html
       isCaseSensitive = false
       minMatchCharLength = 2
       findAllMatches = false
       location = 0
-      threshold = 0.1
+      threshold = 0.3
       distance = 100
-      ignoreLocation = true
+      ignoreLocation = false
       useExtendedSearch = false
       ignoreFieldNorm = false
   # 主页信息设置
