@@ -1,5 +1,5 @@
 baseURL = "https://yyq83.github.io/notion-hugo-blog"
-languageCode = "zh-cn"
+languageCode = "en-cs"
 title = "My New Hugo Site"
 theme = "DoIt"
 
@@ -7,8 +7,8 @@ paginate = 12
 # 版权描述，仅仅用于 SEO
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
 # 菜单配置
-[zh-cn.menu]
-  [[zh-cn.menu.main]]
+[menu]
+  [[menu.main]]
     identifier = "posts"
     # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
     pre = ""
@@ -18,7 +18,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     url = "/posts/"
     title = ""
     weight = 1
-  [[zh-cn.menu.main]]
+  [[menu.main]]
     identifier = "tags"
     pre = ""
     post = ""
@@ -26,7 +26,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     url = "/tags/"
     title = ""
     weight = 2
-  [[zh-cn.menu.main]]
+  [[menu.main]]
     identifier = "categories"
     pre = ""
     post = ""
@@ -34,7 +34,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     url = "/categories/"
     title = ""
     weight = 3
-  [[zh-cn.menu.main]]
+  [[menu.main]]
     identifier = "series"
     pre = ""
     post = ""
@@ -42,7 +42,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     url = "/series/"
     title = ""
     weight = 4
-  [[zh-cn.menu.main]]
+  [[menu.main]]
     identifier = "authors"
     pre = ""
     post = ""
@@ -50,7 +50,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     url = "/authors/"
     title = ""
     weight = 5
-  [[zh-cn.menu.main]]
+  [[menu.main]]
     identifier = "showcase"
     pre = ""
     post = ""
@@ -58,14 +58,14 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     url = "/showcase/"
     title = ""
     weight = 6
-  [[zh-cn.menu.main]]
+  [[menu.main]]
     identifier = "documentation"
     pre = ""
     name = "文档"
     url = "/categories/documentation/"
     title = ""
     weight = 7
-  [[zh-cn.menu.main]]
+  [[menu.main]]
     identifier = "about"
     pre = ""
     post = ""
@@ -73,7 +73,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     url = "/about/"
     title = ""
     weight = 8
-  [[zh-cn.menu.main]]
+  [[menu.main]]
     identifier = "github"
     pre = "<i class='fab fa-github fa-fw'></i>"
     post = ""
@@ -81,13 +81,13 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     url = "https://github.com/HEIGE-PCloud/DoIt"
     title = "GitHub"
     weight = 9
-[zh-cn.params]
+[params]
   # 网站描述
   description = "Hugo DoIt 主题官方文档"
   # 网站关键词
   keywords = ["Theme", "Hugo"]
   # 应用图标配置
-  [zh-cn.params.app]
+  [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
     title = "DoIt"
     # 是否隐藏网站图标资源链接
@@ -99,7 +99,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     # Windows v8-10 磁贴颜色
     tileColor = "#da532c"
   # 搜索配置
-  [zh-cn.params.search]
+  [params.search]
     enable = true
     # 搜索引擎的类型 ("lunr", "algolia", "fuse")
     type = "algolia"
@@ -115,11 +115,11 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     highlightTag = "em"
     # 是否在搜索索引中使用基于 baseURL 的绝对路径
     absoluteURL = false
-    [zh-cn.params.search.algolia]
+    [params.search.algolia]
       index = "zh_cn_index"
       appID = "5YGRNRQK1G"
       searchKey = "0ff6874805de24b84aa1d5ebccad56cd"
-    [zh-cn.params.search.fuse]
+    [params.search.fuse]
       # https://fusejs.io/api/options.html
       isCaseSensitive = false
       minMatchCharLength = 2
@@ -131,11 +131,11 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
       useExtendedSearch = false
       ignoreFieldNorm = false
   # 主页信息设置
-  [zh-cn.params.home]
+  [params.home]
     # RSS 文章数目
     rss = 10
     # 主页个人信息
-    [zh-cn.params.home.profile]
+    [params.home.profile]
       enable = true
       # Gravatar 邮箱，用于优先在主页显示的头像
       gravatarEmail = ""
@@ -152,12 +152,12 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
       # 免责声明 (支持 HTML 格式)
       disclaimer = ""
     # 主页文章列表
-    [zh-cn.params.home.posts]
+    [params.home.posts]
       enable = true
       # 主页每页显示文章数量
       paginate = 7
   # 主页的社交信息设置
-  [zh-cn.params.social]
+  [params.social]
     GitHub = "https://github.com/yyq83"
     Linkedin = ""
     Twitter = ""
