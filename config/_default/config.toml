@@ -2,3 +2,18 @@ baseURL = "https://yyq83.github.io/notion-hugo-blog"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "DoIt"
+
+menu:
+  main:
+    - name: 归档
+      url: archives
+      weight: 1
+    - name: 标签
+      url: tags/
+      weight: 2
+    - name: 搜索
+      url: search/
+      weight: 3
+    - name: 友情链接
+      url: https://yangyinqi.top/links
+      weight: 4
