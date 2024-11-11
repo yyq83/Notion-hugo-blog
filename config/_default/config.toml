@@ -3,79 +3,10 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "DoIt"
 
-[en.menu]
-  [[en.menu.main]]
-    identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
-    post = ""
-    name = "Posts"
-    url = "/posts/"
-    # title will be shown when you hover on this menu link.
-    title = ""
-    weight = 1
-  [[en.menu.main]]
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "Tags"
-    url = "/tags/"
-    title = ""
-    weight = 2
-  [[en.menu.main]]
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = ""
-    weight = 3
-  [[en.menu.main]]
-    identifier = "series"
-    pre = ""
-    post = ""
-    name = "Series"
-    url = "/series/"
-    title = ""
-    weight = 4
-  [[en.menu.main]]
-    identifier = "authors"
-    pre = ""
-    post = ""
-    name = "Authors"
-    url = "/authors/"
-    title = ""
-    weight = 5
-  [[en.menu.main]]
-    identifier = "showcase"
-    pre = ""
-    post = ""
-    name = "Showcase"
-    url = "/showcase/"
-    title = ""
-    weight = 6
-  [[en.menu.main]]
-    identifier = "documentation"
-    pre = ""
-    post = ""
-    name = "Docs"
-    url = "/categories/documentation/"
-    title = ""
-    weight = 7
-  [[en.menu.main]]
-    identifier = "about"
-    pre = ""
-    post = ""
-    name = "About"
-    url = "/about/"
-    title = ""
-    weight = 8
-  [[en.menu.main]]
-    identifier = "github"
-    pre = "<i class='fab fa-github fa-fw'></i>"
-    post = ""
-    name = ""
-    url = "https://github.com/HEIGE-PCloud/DoIt"
-    title = "GitHub"
-    weight = 9
+[author]
+name = "PCloud"
+email = "heige.pcloud@outlook.com"
+link = "https://github.com/HEIGE-PCloud"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
