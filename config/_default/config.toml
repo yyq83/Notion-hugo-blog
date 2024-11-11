@@ -3,10 +3,10 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "DoIt"
 
-[author]
-name = "PCloud"
-email = "heige.pcloud@outlook.com"
-link = "https://github.com/HEIGE-PCloud"
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+[params.home.profile]
+  # Gravatar 邮箱, 用于优先在主页显示的头像
+  gravatarEmail = "yangyinqi85@gmal.com"
+  # 主页显示头像的 URL
+  avatarURL = "/images/avatar.webp"
+  # 头像的链接指向的 URL
+  avatarLinkURL = "yangyinqi85@gmail.com"
