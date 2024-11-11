@@ -3,14 +3,14 @@ import { UserConfig } from "./src/config"
 const userConfig: UserConfig = {
     mount: {
         manual: false,
-        page_url: 'https://pcloud.notion.site/Notion-DoIt-04bcc51cfe4c49938229c35e4f0a6fb6',
+        page_url: 'https://yangyinqi.notion.site/Notion-DoIt-13b94b203a2c808eabd9d83cd76c1391?pvs=4',
         pages: [
             // {
             //     page_id: '<page_id>',
             //     target_folder: 'path/relative/to/content/folder'
             // }
             {
-                page_id: '45eb121158b9489480ec000fd25c812b',
+                page_id: '13b94b203a2c813b9b88c3cb99151074',
                 target_folder: '.'
             }
         ],
@@ -20,7 +20,7 @@ const userConfig: UserConfig = {
             //     target_folder: 'path/relative/to/content/folder'
             // }
             {
-                database_id: 'b7b1816c05ec464391c8c111fa242985',
+                database_id: '13b94b203a2c817a8e2be030a6281735',
                 target_folder: '.'
             }
         ],
