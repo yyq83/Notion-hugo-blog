@@ -1,96 +1,79 @@
 baseURL = "https://yyq83.github.io/notion-hugo-blog"
-languageCode = "en-us"
+languageCode = "zh-cn"
 title = "My New Hugo Site"
 theme = "DoIt"
 
-[params.home.profile]
-  # Gravatar 邮箱, 用于优先在主页显示的头像
-  gravatarEmail = "yangyinqi85@gmal.com"
-  # 主页显示头像的 URL
-  avatarURL = "/images/avatar.webp"
-  # 头像的链接指向的 URL
-  avatarLinkURL = "yangyinqi85@gmail.com"
-
-[params.social]
-  [params.social.Mastodon]
-    # 排列图标时的权重 (权重越大, 图标的位置越靠后)
-    weight = 0
-    # 你的社交 ID
-    id = "@xxxx"
-    # 你的社交链接的前缀
-    prefix = "https://mastodon.social/"
-    # 当鼠标停留在图标上时的提示内容
-    title = "Mastodon"
-
-[menu]
-  [[menu.main]]
+paginate = 12
+# 版权描述，仅仅用于 SEO
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+# 菜单配置
+[zh-cn.menu]
+  [[zh-cn.menu.main]]
     identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
+    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
     pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
+    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
     post = ""
-    name = "Posts"
+    name = "所有文章"
     url = "/posts/"
-    # title will be shown when you hover on this menu link.
     title = ""
     weight = 1
-  [[menu.main]]
+  [[zh-cn.menu.main]]
     identifier = "tags"
     pre = ""
     post = ""
-    name = "Tags"
+    name = "标签"
     url = "/tags/"
     title = ""
     weight = 2
-  [[menu.main]]
+  [[zh-cn.menu.main]]
     identifier = "categories"
     pre = ""
     post = ""
-    name = "Categories"
+    name = "分类"
     url = "/categories/"
     title = ""
     weight = 3
-  [[menu.main]]
+  [[zh-cn.menu.main]]
     identifier = "series"
     pre = ""
     post = ""
-    name = "Series"
+    name = "系列"
     url = "/series/"
     title = ""
     weight = 4
-  [[menu.main]]
+  [[zh-cn.menu.main]]
     identifier = "authors"
     pre = ""
     post = ""
-    name = "Authors"
+    name = "作者"
     url = "/authors/"
     title = ""
     weight = 5
-  [[menu.main]]
+  [[zh-cn.menu.main]]
     identifier = "showcase"
     pre = ""
     post = ""
-    name = "Showcase"
+    name = "作品"
     url = "/showcase/"
     title = ""
     weight = 6
-  [[menu.main]]
+  [[zh-cn.menu.main]]
     identifier = "documentation"
     pre = ""
-    post = ""
-    name = "Docs"
+    name = "文档"
     url = "/categories/documentation/"
     title = ""
     weight = 7
-  [[menu.main]]
+  [[zh-cn.menu.main]]
     identifier = "about"
     pre = ""
     post = ""
-    name = "About"
+    name = "关于"
     url = "/about/"
     title = ""
     weight = 8
-  [[menu.main]]
+  [[zh-cn.menu.main]]
     identifier = "github"
     pre = "<i class='fab fa-github fa-fw'></i>"
     post = ""
@@ -98,3 +81,151 @@ theme = "DoIt"
     url = "https://github.com/HEIGE-PCloud/DoIt"
     title = "GitHub"
     weight = 9
+[zh-cn.params]
+  # 网站描述
+  description = "Hugo DoIt 主题官方文档"
+  # 网站关键词
+  keywords = ["Theme", "Hugo"]
+  # 应用图标配置
+  [zh-cn.params.app]
+    # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
+    title = "DoIt"
+    # 是否隐藏网站图标资源链接
+    noFavicon = false
+    # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
+    svgFavicon = ""
+    # Safari 图标颜色
+    iconColor = "#5bbad5"
+    # Windows v8-10 磁贴颜色
+    tileColor = "#da532c"
+  # 搜索配置
+  [zh-cn.params.search]
+    enable = true
+    # 搜索引擎的类型 ("lunr", "algolia", "fuse")
+    type = "algolia"
+    # 文章内容最长索引长度
+    contentLength = 4000
+    # 搜索框的占位提示语
+    placeholder = ""
+    # 最大结果数目
+    maxResultLength = 10
+    # 结果内容片段长度
+    snippetLength = 50
+    # 搜索结果中高亮部分的 HTML 标签
+    highlightTag = "em"
+    # 是否在搜索索引中使用基于 baseURL 的绝对路径
+    absoluteURL = false
+    [zh-cn.params.search.algolia]
+      index = "zh_cn_index"
+      appID = "5YGRNRQK1G"
+      searchKey = "0ff6874805de24b84aa1d5ebccad56cd"
+    [zh-cn.params.search.fuse]
+      # https://fusejs.io/api/options.html
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.1
+      distance = 100
+      ignoreLocation = true
+      useExtendedSearch = false
+      ignoreFieldNorm = false
+  # 主页信息设置
+  [zh-cn.params.home]
+    # RSS 文章数目
+    rss = 10
+    # 主页个人信息
+    [zh-cn.params.home.profile]
+      enable = true
+      # Gravatar 邮箱，用于优先在主页显示的头像
+      gravatarEmail = ""
+      # 主页显示头像的 URL
+      avatarURL = "/images/avatar.webp"
+      # 主页显示的网站标题 (支持 HTML 格式)
+      title = ""
+      # 主页显示的网站副标题
+      subtitle = "一个简洁、优雅且高效的 Hugo 主题"
+      # 是否为副标题显示打字机动画
+      typeit = true
+      # 是否显示社交账号
+      social = true
+      # 免责声明 (支持 HTML 格式)
+      disclaimer = ""
+    # 主页文章列表
+    [zh-cn.params.home.posts]
+      enable = true
+      # 主页每页显示文章数量
+      paginate = 7
+  # 主页的社交信息设置
+  [zh-cn.params.social]
+    GitHub = "https://github.com/yyq83"
+    Linkedin = ""
+    Twitter = ""
+    Instagram = ""
+    Facebook = ""
+    Telegram = ""
+    Medium = ""
+    Gitlab = ""
+    Youtubelegacy = ""
+    Youtubecustom = ""
+    Youtubechannel = ""
+    Tumblr = ""
+    Quora = ""
+    Keybase = ""
+    Pinterest = ""
+    Reddit = ""
+    Codepen = ""
+    FreeCodeCamp = ""
+    Bitbucket = ""
+    Stackoverflow = ""
+    Weibo = "xxxx"
+    Odnoklassniki = ""
+    VK = ""
+    Flickr = ""
+    Xing = ""
+    Snapchat = ""
+    Soundcloud = ""
+    Spotify = ""
+    Bandcamp = ""
+    Paypal = ""
+    Fivehundredpx = ""
+    Mix = ""
+    Goodreads = ""
+    Lastfm = ""
+    Foursquare = ""
+    Hackernews = ""
+    Kickstarter = ""
+    Patreon = ""
+    Steam = "xxxx"
+    Twitch = ""
+    Strava = ""
+    Skype = ""
+    Whatsapp = ""
+    Zhihu = "xxxx"
+    Douban = "xxxx"
+    Angellist = ""
+    Slidershare = ""
+    Jsfiddle = ""
+    Deviantart = ""
+    Behance = ""
+    Dribbble = ""
+    Wordpress = ""
+    Vine = ""
+    Googlescholar = ""
+    Researchgate = ""
+    Mastodon = ""
+    Thingiverse = ""
+    Devto = "xxxx"
+    Gitea = ""
+    XMPP = ""
+    Matrix = ""
+    Bilibili = "xxxx"
+    ORCID = ""
+    Liberapay = ""
+    Ko-Fi = ""
+    BuyMeACoffee = ""
+    Linktree = ""
+    QQ = ""
+    QQGroup = ""
+    Email = "yangyinqi85@gmail.com"
+    RSS = true
